@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Placement Test - Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">E</div>
+                    <span data-en="ENGLISH TEST" data-ar="اختبار الإنجليزية">ENGLISH TEST</span>
+                </div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                        <li><a href="#" data-en="About" data-ar="حول">About</a></li>
+                        <li><a href="#" data-en="Test" data-ar="الاختبار">Test</a></li>
+                        <li><a href="#" data-en="Results" data-ar="النتائج">Results</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                    <a href="#" class="cta-button" data-en="Let's Talk" data-ar="دعنا نتحدث">Let's Talk <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Language Toggle -->
+        <div class="language-toggle">
+            <button id="langToggle" class="lang-btn">English / العربية</button>
+        </div>
+
+        <!-- Demo Notice -->
+        <div style="background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%); border: 2px solid #ffa500; padding: 1.5rem; margin: 2rem; border-radius: 15px; text-align: center; box-shadow: 0 5px 15px rgba(255, 165, 0, 0.2);">
+            <strong style="color: #856404; font-size: 1.1rem;">🎯 Demo Version</strong> - This is a demonstration of the English Placement Test. Audio files are placeholders. 
+            <br><strong style="color: #856404; font-size: 1.1rem;">🎯 نسخة تجريبية</strong> - هذه نسخة تجريبية من اختبار تحديد مستوى اللغة الإنجليزية. ملفات الصوت هي مجرد أمثلة.
+        </div>
+
+        <!-- Landing Page -->
+        <div id="landingPage" class="page active">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-badge" data-en="YOUR TRUSTED PARTNER" data-ar="شريكك الموثوق">YOUR TRUSTED PARTNER</div>
+                    <h1 class="hero-headline">
+                        <span data-en="English Placement" data-ar="اختبار تحديد مستوى اللغة الإنجليزية">English Placement</span>
+                        <span class="highlight" data-en="Test Services" data-ar="الخدمات">Test Services</span>
+                    </h1>
+                    <p class="hero-subtitle" data-en="Get your accurate CEFR level in Listening, Reading, Speaking, and Writing with our comprehensive 10-minute assessment" data-ar="احصل على مستواك الدقيق في الاستماع والقراءة والتحدث والكتابة من خلال تقييمنا الشامل لمدة 10 دقائق">Get your accurate CEFR level in Listening, Reading, Speaking, and Writing with our comprehensive 10-minute assessment</p>
+                    <div class="hero-buttons">
+                        <button id="startTestBtn" class="hero-btn-primary" data-en="Start Test Now" data-ar="ابدأ الاختبار الآن">Start Test Now <i class="fas fa-arrow-right"></i></button>
+                        <button class="hero-btn-secondary" data-en="Learn More" data-ar="اعرف المزيد">Learn More <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <div class="time-estimate" data-en="Estimated time: 8-10 minutes" data-ar="الوقت المقدر: 8-10 دقائق">Estimated time: 8-10 minutes</div>
+                </div>
+            </section>
+
+            <!-- Service Highlights -->
+            <section class="service-highlights">
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <div class="highlight-number">01</div>
+                        <h3 class="highlight-title" data-en="Best Listening Assessment" data-ar="أفضل تقييم للاستماع">Best Listening Assessment</h3>
+                        <p class="highlight-description" data-en="Comprehensive audio-based evaluation with real-world scenarios" data-ar="تقييم شامل قائم على الصوت مع سيناريوهات من العالم الحقيقي">Comprehensive audio-based evaluation with real-world scenarios</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="highlight-number">02</div>
+                        <h3 class="highlight-title" data-en="Advanced Reading Tests" data-ar="اختبارات القراءة المتقدمة">Advanced Reading Tests</h3>
+                        <p class="highlight-description" data-en="Text comprehension with vocabulary and inference questions" data-ar="فهم النصوص مع أسئلة المفردات والاستنتاج">Text comprehension with vocabulary and inference questions</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <div class="highlight-number">03</div>
+                        <h3 class="highlight-title" data-en="Speaking Evaluation" data-ar="تقييم التحدث">Speaking Evaluation</h3>
+                        <p class="highlight-description" data-en="AI-powered speech analysis with instant feedback" data-ar="تحليل الكلام بالذكاء الاصطناعي مع ردود فعل فورية">AI-powered speech analysis with instant feedback</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Test Page -->
+        <div id="testPage" class="page test-page">
+            <div class="test-container">
+                <!-- Progress Bar -->
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-text" id="progressText" data-en="Section: Listening (1 of 4)" data-ar="القسم: الاستماع (1 من 4)">Section: Listening (1 of 4)</div>
+                </div>
+
+                <!-- Test Content -->
+                <div id="testContent">
+                    <!-- Listening Section -->
+                    <div id="listeningSection" class="test-section">
+                        <h2 data-en="Listening Assessment" data-ar="تقييم الاستماع">Listening Assessment</h2>
+                        <div id="listeningContent"></div>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button id="nextListening" class="next-btn" data-en="Continue to Reading" data-ar="متابعة إلى القراءة">Continue to Reading <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Reading Section -->
+                    <div id="readingSection" class="test-section">
+                        <h2 data-en="Reading Assessment" data-ar="تقييم القراءة">Reading Assessment</h2>
+                        <div id="readingContent"></div>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button id="nextReading" class="next-btn" data-en="Continue to Speaking" data-ar="متابعة إلى التحدث">Continue to Speaking <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Speaking Section -->
+                    <div id="speakingSection" class="test-section">
+                        <h2 data-en="Speaking Assessment" data-ar="تقييم التحدث">Speaking Assessment</h2>
+                        <div class="consent-notice" data-en="Audio will be processed to score your speaking — deleted after scoring unless you allow storage." data-ar="سيتم معالجة التسجيل لتقييم التحدث — سيتم حذفه بعد التقييم إلا إذا سمحت بحفظه.">Audio will be processed to score your speaking — deleted after scoring unless you allow storage.</div>
+                        <div id="speakingContent"></div>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button id="nextSpeaking" class="next-btn" data-en="Continue to Writing" data-ar="متابعة إلى الكتابة">Continue to Writing <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Writing Section -->
+                    <div id="writingSection" class="test-section">
+                        <h2 data-en="Writing Assessment (Optional)" data-ar="تقييم الكتابة (اختياري)">Writing Assessment (Optional)</h2>
+                        <div id="writingContent"></div>
+                        <div class="writing-actions">
+                            <button id="skipWriting" class="skip-btn" data-en="Skip Writing" data-ar="تخطي الكتابة">Skip Writing <i class="fas fa-forward"></i></button>
+                            <button id="nextWriting" class="next-btn" data-en="Finish Test" data-ar="إنهاء الاختبار">Finish Test <i class="fas fa-check"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Page -->
+        <div id="resultsPage" class="page">
+            <div class="results-container">
+                <h1 data-en="Your English Level Results" data-ar="نتائج مستواك في اللغة الإنجليزية">Your English Level Results</h1>
+                <div id="resultsContent"></div>
+                <div class="results-actions">
+                    <button id="retakeTest" class="cta-button" data-en="Retake Test" data-ar="أعد الاختبار">Retake Test <i class="fas fa-redo"></i></button>
+                    <button id="downloadResults" class="secondary-btn" data-en="Download Results" data-ar="تحميل النتائج">Download Results <i class="fas fa-download"></i></button>
+                    <button id="shareResults" class="secondary-btn" data-en="Share Results" data-ar="مشاركة النتائج">Share Results <i class="fas fa-share"></i></button>
+                </div>
+                <div class="privacy-actions">
+                    <a href="#" id="deleteData" data-en="Delete my data" data-ar="احذف بياناتي">Delete my data <i class="fas fa-trash"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">E</div>
+                        <span data-en="ENGLISH TEST" data-ar="اختبار الإنجليزية">ENGLISH TEST</span>
+                    </div>
+                    <p data-en="Your trusted partner for accurate English language assessment and CEFR level evaluation." data-ar="شريكك الموثوق لتقييم اللغة الإنجليزية الدقيق وتقييم مستوى CEFR.">Your trusted partner for accurate English language assessment and CEFR level evaluation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h4>
+                    <ul>
+                        <li><a href="#" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                        <li><a href="#" data-en="About" data-ar="حول">About</a></li>
+                        <li><a href="#" data-en="Test" data-ar="الاختبار">Test</a></li>
+                        <li><a href="#" data-en="Results" data-ar="النتائج">Results</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Our Services" data-ar="خدماتنا">Our Services</h4>
+                    <ul>
+                        <li><a href="#" data-en="Listening Assessment" data-ar="تقييم الاستماع">Listening Assessment</a></li>
+                        <li><a href="#" data-en="Reading Assessment" data-ar="تقييم القراءة">Reading Assessment</a></li>
+                        <li><a href="#" data-en="Speaking Assessment" data-ar="تقييم التحدث">Speaking Assessment</a></li>
+                        <li><a href="#" data-en="Writing Assessment" data-ar="تقييم الكتابة">Writing Assessment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Newsletter" data-ar="النشرة الإخبارية">Newsletter</h4>
+                    <p data-en="Subscribe to get updates on new features and improvements." data-ar="اشترك للحصول على تحديثات حول الميزات الجديدة والتحسينات.">Subscribe to get updates on new features and improvements.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" data-en-placeholder="Enter your email" data-ar-placeholder="أدخل بريدك الإلكتروني">
+                        <button type="submit" data-en="Subscribe" data-ar="اشترك">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 English Test. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="test-content.js"></script>
+    <script src="fluency-chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

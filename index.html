@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Placement Test - Test Your English Level</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Analytics (Replace GA_MEASUREMENT_ID with your actual ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <!-- Simple Visitor Counter -->
+    <script>
+        // Simple visitor counter using localStorage
+        function updateVisitorCount() {
+            let count = localStorage.getItem('visitorCount') || 0;
+            count = parseInt(count) + 1;
+            localStorage.setItem('visitorCount', count);
+            
+            // Display counter (optional - you can remove this)
+            const counter = document.getElementById('visitor-counter');
+            if (counter) {
+                counter.textContent = `Visitors: ${count}`;
+            }
+            
+            // Log to console for debugging
+            console.log(`Visitor #${count} visited the site`);
+        }
+        
+        // Run on page load
+        window.addEventListener('load', updateVisitorCount);
+    </script>
+</head>
+<body>
+    <div id="app">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">E</div>
+                    <span data-en="ENGLISH TEST" data-ar="اختبار الإنجليزية">ENGLISH TEST</span>
+                </div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                        <li><a href="#" data-en="About" data-ar="حول">About</a></li>
+                        <li><a href="#" data-en="Test" data-ar="الاختبار">Test</a></li>
+                        <li><a href="#" data-en="Results" data-ar="النتائج">Results</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <!-- Search and Let's Talk buttons removed as requested -->
+                </div>
+            </div>
+        </header>
+
+        <!-- Language Toggle -->
+        <div class="language-toggle">
+            <button id="langToggle" class="lang-btn">English / العربية</button>
+        </div>
+
+        <!-- About Page -->
+        <div id="aboutPage" class="page">
+            <div class="about-content">
+                <div class="about-container">
+                    <h1 data-en="About English Test" data-ar="حول اختبار اللغة الإنجليزية">About English Test</h1>
+                    <div class="about-description">
+                        <p data-en="Our comprehensive English placement test is designed to accurately assess your language proficiency across all four key skills: listening, reading, speaking, and writing. Based on the internationally recognized CEFR (Common European Framework of Reference) levels, this test provides reliable results to help you understand your current English level and identify areas for improvement." 
+                           data-ar="اختبار تحديد مستوى اللغة الإنجليزية الشامل مصمم لتقييم كفاءتك اللغوية بدقة عبر المهارات الأربع الأساسية: الاستماع، القراءة، التحدث، والكتابة. بناءً على مستويات الإطار الأوروبي المرجعي المشترك للغات (CEFR) المعترف بها دولياً، يوفر هذا الاختبار نتائج موثوقة لمساعدتك على فهم مستوى إنجليزيتك الحالي وتحديد المجالات التي تحتاج للتحسين.">
+                            Our comprehensive English placement test is designed to accurately assess your language proficiency across all four key skills: listening, reading, speaking, and writing. Based on the internationally recognized CEFR (Common European Framework of Reference) levels, this test provides reliable results to help you understand your current English level and identify areas for improvement.
+                        </p>
+                        
+                        <div class="accuracy-feedback" style="background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%); border: 2px solid #3498db; border-radius: 15px; padding: 2rem; margin: 2rem 0; box-shadow: 0 5px 15px rgba(52, 152, 219, 0.1);">
+                            <h3 data-en="Why Our Test is Accurate" data-ar="لماذا اختبارنا دقيق" style="color: #2c3e50; margin-bottom: 1rem; font-size: 1.3rem; font-weight: 600;">Why Our Test is Accurate</h3>
+                            <ul style="list-style: none; padding: 0;">
+                                <li data-en="✓ Expert-Designed Assessment: Carefully crafted questions by English language experts" data-ar="✓ تقييم مصمم من الخبراء: أسئلة مصممة بعناية من قبل خبراء اللغة الإنجليزية" style="color: #2c3e50; padding: 0.5rem 0; padding-left: 1.5rem; position: relative; font-size: 1rem;">✓ Expert-Designed Assessment: Carefully crafted questions by English language experts</li>
+                                <li data-en="✓ Real-World Scenarios: Questions based on actual English usage patterns" data-ar="✓ سيناريوهات من العالم الحقيقي: أسئلة مبنية على أنماط الاستخدام الفعلية للغة الإنجليزية" style="color: #2c3e50; padding: 0.5rem 0; padding-left: 1.5rem; position: relative; font-size: 1rem;">✓ Real-World Scenarios: Questions based on actual English usage patterns</li>
+                                <li data-en="✓ CEFR Standards: Internationally recognized framework ensures accuracy" data-ar="✓ معايير CEFR: الإطار المرجعي المعترف به دولياً يضمن الدقة" style="color: #2c3e50; padding: 0.5rem 0; padding-left: 1.5rem; position: relative; font-size: 1rem;">✓ CEFR Standards: Internationally recognized framework ensures accuracy</li>
+                                <li data-en="✓ Instant Results: Get immediate feedback on your English level" data-ar="✓ نتائج فورية: احصل على تقييم فوري لمستوى إنجليزيتك" style="color: #2c3e50; padding: 0.5rem 0; padding-left: 1.5rem; position: relative; font-size: 1rem;">✓ Instant Results: Get immediate feedback on your English level</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="motivational-quote" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border: 2px solid #3498db; border-radius: 15px; padding: 2rem; margin: 2rem 0; text-align: center; box-shadow: 0 5px 15px rgba(52, 152, 219, 0.1);">
+                            <blockquote style="font-style: italic; font-size: 1.2rem; color: #2c3e50; margin: 0; line-height: 1.6;">
+                                <p data-en="&quot;The limits of my language mean the limits of my world.&quot; - Ludwig Wittgenstein" data-ar="&quot;حدود لغتي تعني حدود عالمي.&quot; - لودفيغ فيتجنشتاين" style="margin: 0;">
+                                    "The limits of my language mean the limits of my world." - Ludwig Wittgenstein
+                                </p>
+                            </blockquote>
+                        </div>
+                        
+                        <h3 data-en="Test Features:" data-ar="مميزات الاختبار:">Test Features:</h3>
+                        <ul>
+                            <li data-en="Listening Comprehension - Real conversations and audio clips" data-ar="فهم المسموع - محادثات حقيقية ومقاطع صوتية">Listening Comprehension - Real conversations and audio clips</li>
+                            <li data-en="Reading Assessment - Various text types and difficulty levels" data-ar="تقييم القراءة - أنواع نصوص ومستويات صعوبة متنوعة">Reading Assessment - Various text types and difficulty levels</li>
+                            <li data-en="Speaking Evaluation - Voice recording and pronunciation analysis" data-ar="تقييم التحدث - تسجيل صوتي وتحليل النطق">Speaking Evaluation - Voice recording and pronunciation analysis</li>
+                            <li data-en="Writing Skills - Structured writing tasks and grammar assessment" data-ar="مهارات الكتابة - مهام كتابية منظمة وتقييم القواعد">Writing Skills - Structured writing tasks and grammar assessment</li>
+                        </ul>
+                        
+                        <p data-en="The test takes approximately 15-20 minutes to complete and provides instant results with detailed feedback and recommendations for further learning." 
+                           data-ar="يستغرق الاختبار حوالي 15-20 دقيقة للإكمال ويوفر نتائج فورية مع تعليقات مفصلة وتوصيات للتعلم الإضافي.">
+                            The test takes approximately 15-20 minutes to complete and provides instant results with detailed feedback and recommendations for further learning.
+                        </p>
+                        
+                    </div>
+                    <div class="about-actions">
+                        <button class="cta-button" onclick="app.showPage('landingPage')" data-en="Back to Home" data-ar="العودة للرئيسية">Back to Home</button>
+                        <button class="hero-btn-primary" onclick="app.startTest()" data-en="Start Test" data-ar="ابدأ الاختبار">Start Test</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Landing Page -->
+        <div id="landingPage" class="page active">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-badge" data-en="YOUR TRUSTED PARTNER" data-ar="شريكك الموثوق">YOUR TRUSTED PARTNER</div>
+                    <h1 class="hero-headline">
+                        <span data-en="English Placement" data-ar="اختبار تحديد مستوى اللغة الإنجليزية">English Placement</span>
+                        <span class="highlight" data-en="Test Services" data-ar="الخدمات">Test Services</span>
+                    </h1>
+                    <p class="hero-subtitle" data-en="Get your accurate CEFR level in Listening, Reading, Speaking, and Writing with our comprehensive 10-minute assessment" data-ar="احصل على مستواك الدقيق في الاستماع والقراءة والتحدث والكتابة من خلال تقييمنا الشامل لمدة 10 دقائق">Get your accurate CEFR level in Listening, Reading, Speaking, and Writing with our comprehensive 10-minute assessment</p>
+                    <div class="hero-buttons">
+                        <button id="startTestBtn" class="hero-btn-primary" data-en="Start Test Now" data-ar="ابدأ الاختبار الآن">Start Test Now <i class="fas fa-arrow-right"></i></button>
+                        <button class="hero-btn-secondary" data-en="Learn More" data-ar="اعرف المزيد">Learn More <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <div class="time-estimate" data-en="Estimated time: 8-10 minutes" data-ar="الوقت المقدر: 8-10 دقائق">Estimated time: 8-10 minutes</div>
+                </div>
+            </section>
+
+            <!-- Service Highlights -->
+            <section class="service-highlights">
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <div class="highlight-number">01</div>
+                        <h3 class="highlight-title" data-en="Best Listening Assessment" data-ar="أفضل تقييم للاستماع">Best Listening Assessment</h3>
+                        <p class="highlight-description" data-en="Comprehensive audio-based evaluation with real-world scenarios" data-ar="تقييم شامل قائم على الصوت مع سيناريوهات من العالم الحقيقي">Comprehensive audio-based evaluation with real-world scenarios</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="highlight-number">02</div>
+                        <h3 class="highlight-title" data-en="Advanced Reading Tests" data-ar="اختبارات القراءة المتقدمة">Advanced Reading Tests</h3>
+                        <p class="highlight-description" data-en="Text comprehension with vocabulary and inference questions" data-ar="فهم النصوص مع أسئلة المفردات والاستنتاج">Text comprehension with vocabulary and inference questions</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <div class="highlight-number">03</div>
+                        <h3 class="highlight-title" data-en="Speaking Evaluation" data-ar="تقييم التحدث">Speaking Evaluation</h3>
+                        <p class="highlight-description" data-en="AI-powered speech analysis with instant feedback" data-ar="تحليل الكلام بالذكاء الاصطناعي مع ردود فعل فورية">AI-powered speech analysis with instant feedback</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <!-- Test Page -->
+        <div id="testPage" class="page test-page">
+            <div class="test-container">
+                <!-- Progress Bar -->
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-text" id="progressText" data-en="Section: Listening (1 of 4)" data-ar="القسم: الاستماع (1 من 4)">Section: Listening (1 of 4)</div>
+                </div>
+
+                <!-- Test Content -->
+                <div id="testContent">
+                    <!-- Listening Section -->
+                    <div id="listeningSection" class="test-section">
+                        <h2 data-en="Listening Assessment" data-ar="تقييم الاستماع">Listening Assessment</h2>
+                        <div id="listeningContent"></div>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button id="nextListening" class="next-btn" data-en="Continue to Reading" data-ar="متابعة إلى القراءة">Continue to Reading <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Reading Section -->
+                    <div id="readingSection" class="test-section">
+                        <h2 data-en="Reading Assessment" data-ar="تقييم القراءة">Reading Assessment</h2>
+                        <div id="readingContent"></div>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button id="nextReading" class="next-btn" data-en="Continue to Speaking" data-ar="متابعة إلى التحدث">Continue to Speaking <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Speaking Section -->
+                    <div id="speakingSection" class="test-section">
+                        <h2 data-en="Speaking Assessment" data-ar="تقييم التحدث">Speaking Assessment</h2>
+                        <div class="consent-notice" data-en="Audio will be processed to score your speaking — deleted after scoring unless you allow storage." data-ar="سيتم معالجة التسجيل لتقييم التحدث — سيتم حذفه بعد التقييم إلا إذا سمحت بحفظه.">Audio will be processed to score your speaking — deleted after scoring unless you allow storage.</div>
+                        <div id="speakingContent"></div>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button id="nextSpeaking" class="next-btn" data-en="Continue to Writing" data-ar="متابعة إلى الكتابة">Continue to Writing <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Writing Section -->
+                    <div id="writingSection" class="test-section">
+                        <h2 data-en="Writing Assessment (Optional)" data-ar="تقييم الكتابة (اختياري)">Writing Assessment (Optional)</h2>
+                        <div id="writingContent"></div>
+                        <div class="writing-actions">
+                            <button id="skipWriting" class="skip-btn" data-en="Skip Writing" data-ar="تخطي الكتابة">Skip Writing <i class="fas fa-forward"></i></button>
+                            <button id="nextWriting" class="next-btn" data-en="Finish Test" data-ar="إنهاء الاختبار">Finish Test <i class="fas fa-check"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Page -->
+        <div id="resultsPage" class="page">
+            <div class="results-container">
+                <h1 data-en="Your English Level Results" data-ar="نتائج مستواك في اللغة الإنجليزية">Your English Level Results</h1>
+                <div id="resultsContent"></div>
+                <div class="results-actions">
+                    <button id="retakeTest" class="cta-button" data-en="Retake Test" data-ar="أعد الاختبار">Retake Test <i class="fas fa-redo"></i></button>
+                    <button id="downloadResults" class="secondary-btn" data-en="Download Results" data-ar="تحميل النتائج">Download Results <i class="fas fa-download"></i></button>
+                    <button id="shareResults" class="secondary-btn" data-en="Share Results" data-ar="مشاركة النتائج">Share Results <i class="fas fa-share"></i></button>
+                </div>
+                <div class="privacy-actions">
+                    <a href="#" id="deleteData" data-en="Delete my data" data-ar="احذف بياناتي">Delete my data <i class="fas fa-trash"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">E</div>
+                        <span data-en="ENGLISH TEST" data-ar="اختبار الإنجليزية">ENGLISH TEST</span>
+                    </div>
+                    <p data-en="Your trusted partner for accurate English language assessment and CEFR level evaluation." data-ar="شريكك الموثوق لتقييم اللغة الإنجليزية الدقيق وتقييم مستوى CEFR.">Your trusted partner for accurate English language assessment and CEFR level evaluation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h4>
+                    <ul>
+                        <li><a href="#" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                        <li><a href="#" data-en="About" data-ar="حول">About</a></li>
+                        <li><a href="#" data-en="Test" data-ar="الاختبار">Test</a></li>
+                        <li><a href="#" data-en="Results" data-ar="النتائج">Results</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Our Services" data-ar="خدماتنا">Our Services</h4>
+                    <ul>
+                        <li><a href="#" data-en="Listening Assessment" data-ar="تقييم الاستماع">Listening Assessment</a></li>
+                        <li><a href="#" data-en="Reading Assessment" data-ar="تقييم القراءة">Reading Assessment</a></li>
+                        <li><a href="#" data-en="Speaking Assessment" data-ar="تقييم التحدث">Speaking Assessment</a></li>
+                        <li><a href="#" data-en="Writing Assessment" data-ar="تقييم الكتابة">Writing Assessment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Get Personalized Help" data-ar="احصل على مساعدة مخصصة">Get Personalized Help</h4>
+                    <p data-en="For more personalized learning plans and English tips, contact me:" data-ar="لمزيد من الخطط التعليمية المخصصة ونصائح اللغة الإنجليزية، تواصل معي:">For more personalized learning plans and English tips, contact me:</p>
+                    <div style="margin: 1rem 0;">
+                        <p style="color: #3498db; font-weight: 600; margin: 0.5rem 0;">
+                            📧 <a href="mailto:saramohammedemail1809@gmail.com" style="color: #3498db; text-decoration: none;">saramohammedemail1809@gmail.com</a>
+                        </p>
+                    </div>
+                    <div style="margin: 1.5rem 0;">
+                        <a href="https://www.tiktok.com/@fluent.with.sara?_t=ZS-90CVqTPilHU&_r=1" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, #ff0050 0%, #00f2ea 100%); color: white; padding: 1rem 2rem; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 1.1rem; box-shadow: 0 6px 20px rgba(255, 0, 80, 0.3); transition: all 0.3s ease;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                            </svg>
+                            <span data-en="Follow me on TikTok for more tips!" data-ar="تابعني على تيك توك للمزيد من النصائح!">Follow me on TikTok for more tips!</span>
+                        </a>
+                    </div>
+                    <p style="color: #2c3e50; font-size: 0.9rem; margin: 0; opacity: 0.8;" data-en="Get personalized learning plans and daily English content" data-ar="احصل على خطط تعليمية مخصصة ومحتوى إنجليزي يومي">Get personalized learning plans and daily English content</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 English Test. All rights reserved.</p>
+                <p id="visitor-counter" style="color: #3498db; font-size: 0.9rem; margin-top: 0.5rem;">Loading visitor count...</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="test-content.js"></script>
+    <script src="fluency-chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
